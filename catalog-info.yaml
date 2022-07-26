@@ -2,27 +2,35 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sample-service-1
-  title: Service 1
+  title: Web-Finanzas
   description: |
-    A service for testing Backstage functionality. Configured for GitHub Actions and
-    Sentry.
+    Servicio de test para Backstage. Tecnologia nodejs 
   links:
-    - url: https://www.notion.so/roadie/Sample-Service-e067465e56a14ae9b0507f8559f6aa26
-      title: Datadog
+    - url: https://web.com
+      title: Web Front prod
+      icon: dashboard
+    - url: https://backend.com
+      title: Backend prod
+      icon: dashboard
+    - url: https://util.com
+      title: Microservicio Util prod
+      icon: dashboard
+    - url: https://dev.web.com
+      title: Web Front dev
       icon: dashboard
   tags:
-    - test
+    - node-12
     - js
+    - roble
   annotations:
     backstage.io/techdocs-ref: dir:.
-    backstage.io/kubernetes-id: api-finanzas
-    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/name=api-finanzas-pod'
-    opsgenie.com/component-selector: api-finanzas-pod
+    sonarqube.org/project-key: SISTADMISION-BKOFFCAJAS-ANGULAR
+    jenkins.io/job-full-name: prod:produccion/Roble-Finanzas/web-finanzas
 spec:
-  type: service
-  owner: team-trebol
+  type: website
+  owner: trebol-it
   lifecycle: production
-  system: Roble
+  system: Roble-finanzas
   providesApis:
     - sample-service
   dependsOn:
@@ -39,24 +47,24 @@ metadata:
 spec:
   type: library
   lifecycle: production
-  owner: sample-team
-  system: sample-system
+  owner: trebol-it
+  system: Roble-finanzas
   subcomponentOf: sample-service-1
 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  title: Sample Service API
-  name: sample-service
+  title: Ejemplo Service API
+  name: TYK
   description: The Sample Service API allows you to send errors to Rollbar or Sentry.
   tags:
     - unstable
 spec:
   type: openapi
   lifecycle: production
-  owner: sample-team
-  system: sample-system
+  owner: trebol-it
+  system: Roble-finanzas
   definition:
     $text: https://github.com/RoadieHQ/sample-service/blob/main/api-spec.yaml
 
@@ -64,9 +72,9 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: sample-s3-bucket
-  description: The s3 bucket with the sample data in it. Doesn't really exist.
+  name: bd-mongo
+  description: BD Mongo en cluster k8, replicaset 3 replicas.
 spec:
-  type: s3-bucket
-  owner: sample-team
-  system: sample-system
+  type: bd-mongo
+  owner: trebol-it
+  system: Roble-finanzas

@@ -6,6 +6,6 @@ of required environment variables.
 Then run the software locally like this:
 
 ```shell
-yarn start
-curl :3000/
+npm start
+curl localhost:3000/
 ```

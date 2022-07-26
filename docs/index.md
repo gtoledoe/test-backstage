@@ -1,18 +1,7 @@
-# Docs for sample-service-1
+# Docs for SERVICE
 
-Anyone who has spent more than a month working in a decently sized software engineering department
-can tell you the pain of finding documentation. Everyone wishes that great docs for internal
-services were the norm but few people are willing to spend the time it takes to make fantastic
-docs a reality.
+Lorem ipsum dolor sit amet. At corrupti minima hic numquam porro est doloremque fuga. Est corporis corporis sed illum sint nam exercitationem maiores ut quis exercitationem ea pariatur alias aut adipisci adipisci qui saepe perferendis. Ut odit repellendus et consequatur quos sed delectus vitae et placeat nihil et nihil debitis ut nostrum earum.
 
-Even when you do take the time to write good docs, they end up being so difficult to find that you
-might as well not have bothered. Motivated teams will create a dedicated website for the software
-they have lovingly crafted. But searching for internal software isn’t like searching the open web,
-Google doesn’t index your internal subdomains (hopefully!).
+Ea placeat laborum qui maiores voluptatem et facere Quis ut eveniet ratione nam alias impedit. Est repellendus nostrum est eius voluptatem eos quia praesentium et sunt totam quo quia blanditiis et explicabo assumenda sit officia placeat. Aut enim rerum id tenetur blanditiis et error sapiente aut quos quaerat.
 
-It’s no wonder that software teams struggle to summon the motivation to produce great docs.
-They’re hard to write and nobody will see them anyway.
-
-Backstage solves this problem by co-locating documentation with the service it is for. Write
-your docs-as-code in whatever format you like ([MkDocs](https://www.mkdocs.org/) is currently
-supported out of the box), publish it where-ever you like, and Backstage will display it in context where it is easier to find.
+Qui nemo quas et consequuntur aliquid est amet explicabo. Ad deserunt rerum qui earum necessitatibus vel excepturi natus. Aut veniam vero et obcaecati quia et tenetur sunt aut culpa doloremque ea numquam dolorum. At internos asperiores ea nostrum nihil qui ullam ipsum aut ducimus quam!

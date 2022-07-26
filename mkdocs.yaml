@@ -1,9 +1,9 @@
-site_name: 'Root docs'
+site_name: 'Documentacíon'
 
 nav:
   - Home: index.md
-  - Local development: local-development.md
-  - Feature Testing: feature-testing.md
+  - Ejecucion Local: local-development.md
+  - documentos: feature-testing.md
 docs_dir: docs
 plugins:
   - techdocs-core
