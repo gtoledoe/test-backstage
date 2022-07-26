@@ -5,11 +5,12 @@ metadata:
   description: demostracion app test
   tags:
     - api-test
-  links:
-    - url: https://api-test.com
-      title: Front End
-      icon: dashboard
 spec:
   type: service
   lifecycle: production
-  owner: user:guest
+  owner: equipo
+  system: finanzas
+  dependsOn:
+    - resource:default/artists-db
+  providesApis:
+    - artist-api
