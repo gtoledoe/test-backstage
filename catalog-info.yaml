@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: sample-service-1
-  title: Web-Finanzas
+  name: sample-component-1
+  title: web-finanzas
   description: |
     Servicio de test para Backstage. Tecnologia nodejs 
   links:
@@ -31,33 +31,32 @@ spec:
   owner: trebol-it
   lifecycle: production
   system: Roble-finanzas
-  providesApis:
-    - sample-service
   dependsOn:
-    - Component:sample-service-2
-    - Resource:sample-s3-bucket
+    - Component:api-cajas
+    - Resource:bd-mongo
 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  title: Sentry JS
-  name: sentry-js
-  description: A JS client which communicates with the Sentry HTTP API.
+  title: Backend
+  name: api-cajas
+  description: Servicio backend proyecto, ejemplo backstage.
 spec:
-  type: library
+  type: backend
   lifecycle: production
   owner: trebol-it
   system: Roble-finanzas
-  subcomponentOf: sample-service-1
+  providesApis:
+    - tyk-api
 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   title: Ejemplo Service API
-  name: TYK
-  description: The Sample Service API allows you to send errors to Rollbar or Sentry.
+  name: tyk-api-validar
+  description: Servicio de API que permite ejecutar accion validar.
   tags:
     - unstable
 spec:
@@ -66,7 +65,8 @@ spec:
   owner: trebol-it
   system: Roble-finanzas
   definition:
-    $text: https://github.com/RoadieHQ/sample-service/blob/main/api-spec.yaml
+    $text: https://url-definicionapi.yaml
+  subcomponentOf: api-cajas
 
 ---
 apiVersion: backstage.io/v1alpha1
