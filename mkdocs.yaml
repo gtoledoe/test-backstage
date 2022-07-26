@@ -1,4 +1,4 @@
-site_name: Root docs
+site_name: 'Root docs'
 
 nav:
   - Home: index.md
@@ -6,4 +6,4 @@ nav:
   - Feature Testing: feature-testing.md
 docs_dir: docs
 plugins:
-  - monorepo
+  - techdocs-core
