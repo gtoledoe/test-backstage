@@ -30,10 +30,7 @@ spec:
   owner: trebol-it
   lifecycle: production
   system: Roble-finanzas
-  providesApis:
-    - tyk-api-validar
-  dependsOn:
-    - Component:sample-service-2
+  dependsOn:    
     - Component:api-cajas
 
 ---
@@ -57,6 +54,7 @@ spec:
   providesApis:
     - tyk-api-validar
   dependsOn:
+    - Component:sample-service-2
     - Resource:bd-mongo
 
 ---
