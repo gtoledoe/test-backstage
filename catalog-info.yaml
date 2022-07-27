@@ -19,8 +19,7 @@ metadata:
       title: Web Front dev
       icon: dashboard
   tags:
-    - node-12
-    - js
+    - angular
     - roble
   annotations:
     backstage.io/techdocs-ref: dir:.
@@ -33,7 +32,6 @@ spec:
   system: Roble-finanzas
   dependsOn:
     - Component:api-cajas
-    - Resource:bd-mongo
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -42,13 +40,21 @@ metadata:
   title: Backend
   name: api-cajas
   description: Servicio backend proyecto, ejemplo backstage.
+  tags:
+    - nodejs
+    - roble
+  annotations:
+    sonarqube.org/project-key: SISTADMISION-BKOFFCAJAS-ANGULAR
+    jenkins.io/job-full-name: prod:produccion/Roble-Finanzas/api-finanzas
 spec:
   type: backend
   lifecycle: production
   owner: trebol-it
   system: Roble-finanzas
   providesApis:
-    - tyk-api
+    - tyk-api-validar
+  dependsOn:
+    - Resource:bd-mongo
 
 ---
 apiVersion: backstage.io/v1alpha1
