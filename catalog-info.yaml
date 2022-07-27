@@ -84,3 +84,17 @@ spec:
   type: bd-mongo
   owner: trebol-it
   system: Roble-finanzas
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  title: servicio-2
+  name: new-service
+  description: Ejemplo.
+spec:
+  type: microservicio
+  lifecycle: production
+  owner: trebol-it
+  system: roble
+  subcomponentOf: api-cajas
