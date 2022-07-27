@@ -30,6 +30,8 @@ spec:
   owner: trebol-it
   lifecycle: production
   system: Roble-finanzas
+  providesApis:
+    - tyk-api-validar
   dependsOn:
     - Component:api-cajas
 
