@@ -48,6 +48,7 @@ metadata:
   annotations:
     sonarqube.org/project-key: SISTADMISION-BKOFFCAJAS-ANGULAR
     jenkins.io/job-full-name: prod:produccion/Roble-Finanzas/api-finanzas
+    backstage.io/techdocs-ref: dir:.mkdocs-02.yaml
 spec:
   type: backend
   lifecycle: production
