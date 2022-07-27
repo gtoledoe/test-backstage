@@ -42,6 +42,10 @@ metadata:
   title: Backend
   name: api-cajas
   description: Servicio backend proyecto, ejemplo backstage.
+  links:
+    - url: https://backend.com
+      title: Backend prod
+      icon: dashboard
   tags:
     - nodejs
     - roble
