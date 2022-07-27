@@ -33,6 +33,7 @@ spec:
   providesApis:
     - tyk-api-validar
   dependsOn:
+    - Component:sample-service-2
     - Component:api-cajas
 
 ---
