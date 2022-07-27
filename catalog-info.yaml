@@ -30,8 +30,6 @@ spec:
   owner: trebol-it
   lifecycle: production
   system: Roble-finanzas
-  providesApis:
-    - tyk-api-validar
   dependsOn:    
     - Component:api-cajas
 
@@ -61,23 +59,6 @@ spec:
   dependsOn:
     - Component:sample-service-2
     - Resource:bd-mongo
-
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  title: Ejemplo Service API
-  name: tyk-api-validar
-  description: Servicio de API que permite ejecutar accion validar.
-  tags:
-    - unstable
-spec:
-  type: openapi
-  lifecycle: production
-  owner: trebol-it
-  system: Roble-finanzas
-  definition:
-    $text: https://url-definicionapi.yaml
 
 ---
 apiVersion: backstage.io/v1alpha1
