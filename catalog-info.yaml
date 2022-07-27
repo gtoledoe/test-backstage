@@ -72,7 +72,6 @@ spec:
   system: Roble-finanzas
   definition:
     $text: https://url-definicionapi.yaml
-  subcomponentOf: api-cajas
 
 ---
 apiVersion: backstage.io/v1alpha1
